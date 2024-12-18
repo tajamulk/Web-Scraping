@@ -1,84 +1,76 @@
-# **Web Scraping Project: Extracting Data from Wikipedia**
+# **Web Scraping Project: Data Extraction from Wikipedia**
 
 ## **Project Overview**
-This project involves web scraping a table from a real-world website: [Wikipedia's List of largest companies in the United States by revenue](https://en.wikipedia.org/wiki/List_of_largest_companies_in_the_United_States_by_revenue). Using **Python** and the **Pandas** library, the table titled **"List of the largest public / publicly traded companies"** was extracted and converted into a structured **CSV file** for further analysis.
+This project demonstrates how to scrape data from a live webpage: [Wikipedia's List of Largest Companies in the United States by Revenue](https://en.wikipedia.org/wiki/List_of_largest_companies_in_the_United_States_by_revenue). Using **Python** and the **Pandas** library, I extracted the table titled **"List of the largest public / publicly traded companies"** and converted it into a well-organized **CSV file** for analysis.
 
 ---
 
 ## **Objectives**
-- 📝 **Extract data** from a live website using Python.
-- 🛠️ **Parse and process** the HTML content to identify and extract relevant information.
-- 📂 **Convert** the extracted data into a structured format (CSV).
+- 📝 **Extract information** from a live webpage with Python.
+- 🛠️ **Parse and process** the HTML to gather relevant data.
+- 📂 **Export** the data into a structured CSV format.
 
 ---
 
 ## **Tools and Technologies Used**
-- 🐍 **Python**: The core programming language for this project.
-- 🌐 **BeautifulSoup**: For parsing and navigating the HTML content.
-- 🔗 **Requests**: For fetching the HTML content of the website.
-- 📊 **Pandas**: For data manipulation and exporting to CSV format.
-- 🖥️ **Jupyter Notebook**: For developing and testing the code interactively.
+- 🐍 **Python**: The primary programming language for this project.
+- 🌐 **BeautifulSoup**: For parsing HTML content and navigating the webpage.
+- 🔗 **Requests**: To fetch the HTML of the target webpage.
+- 📊 **Pandas**: For data manipulation and CSV export.
+- 🖥️ **Jupyter Notebook**: For interactive code development and testing.
 
 ---
 
 ## **Project Workflow**
-1. **Fetching the Website Content**:
-   - Used the `requests` library to fetch the HTML content of the Wikipedia page.
+1. **Fetching Web Content**:
+   - Employed the `requests` library to retrieve the HTML content from the Wikipedia page.
 
-2. **Parsing HTML with BeautifulSoup**:
-   - Analyzed the structure of the webpage to locate the required table.
-   - Extracted the `<table>` element containing the data of interest.
+2. **HTML Parsing with BeautifulSoup**:
+   - Analyzed the webpage structure to locate the desired table.
+   - Extracted the `<table>` element containing the relevant data.
 
 3. **Data Extraction**:
-   - Retrieved the **headers** (`<th>` elements) and **rows** (`<tr>` elements) from the table.
-   - Processed and cleaned the extracted data to ensure consistency.
+   - Retrieved the **header** (`<th>` elements) and **row** (`<tr>` elements) data.
+   - Cleaned the extracted data to ensure uniformity and accuracy.
 
 4. **Data Transformation**:
-   - Converted the data into a **Pandas DataFrame** for better manipulation and visualization.
+   - Converted the raw data into a **Pandas DataFrame** for easier manipulation.
 
 5. **Exporting Data**:
-   - Saved the final DataFrame as a **CSV file** for future use.
+   - Exported the final DataFrame into a **CSV file** for further analysis.
 
 ---
 
-## **Skills Gained**
-Through this project, I developed and enhanced the following skills:
+## **Skills Developed**
+This project enhanced my proficiency in the following areas:
 
 ### 🔍 **1. Web Scraping**
-   - Understanding and navigating HTML structure to locate specific elements.
-   - Extracting and parsing data using **BeautifulSoup**.
+   - Navigating HTML structure to identify and extract specific data.
+   - Using **BeautifulSoup** to parse and extract content from webpages.
 
 ### 🔄 **2. Data Wrangling**
-   - Cleaning and transforming raw HTML data into structured formats.
-   - Handling missing or inconsistent data.
+   - Transforming raw HTML data into structured formats.
+   - Cleaning and handling missing or inconsistent data.
 
 ### 💻 **3. Python Programming**
-   - Writing efficient and reusable code to automate data extraction.
-   - Utilizing libraries such as `requests`, `BeautifulSoup`, and `pandas`.
+   - Writing reusable and efficient Python code for data scraping.
+   - Leveraging libraries like `requests`, `BeautifulSoup`, and `Pandas` for seamless execution.
 
-### 📊 **4. Data Analysis Tools**
-   - Working with **Pandas** for data manipulation.
-   - Exporting data to **CSV format** for further analysis.
+### 📊 **4. Data Analysis Techniques**
+   - Manipulating data with **Pandas** to generate meaningful insights.
+   - Exporting clean data to **CSV format** for future use.
 
 ### 🛠️ **5. Problem-Solving and Debugging**
-   - Addressing challenges such as dynamic website elements or inconsistent data formatting.
+   - Troubleshooting issues like inconsistent data formatting and dynamic web elements.
 
 ---
 
 ## **Results**
-The extracted data was successfully converted into a **CSV file**, providing a structured and clean dataset containing:
+The data was successfully scraped and exported as a **CSV file**, containing:
 - **Rank**
-- **Name**
+- **Company Name**
 - **Industry**
-- **Revenue (USD millions)**
+- **Revenue (in millions USD)**
 - **Revenue Growth**
-- **Employees**
-- **Headquarters**
-
-## **Inspiration**
-
-This project was inspired and guided by Alex the Analyst on his [YouTube channel](https://www.youtube.com/@AlexTheAnalyst). His clear and practical explanations helped make these concepts easy to understand and apply.
-
-## **Feedback**
-
-Feel free to raise an issue or submit a pull request for suggestions, improvements, or additional projects. Your contributions are welcome!
+- **Number of Employees**
+- **Headquarters Location** 
